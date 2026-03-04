@@ -41,8 +41,10 @@ public class Estudiante {
 
     public void haAprobado() {
         if (promedio >= 3.0) {
+            boolean aprobado = true;
             System.out.println(nombre + " ha aprobado con un promedio de " + promedio);
         } else {
+            boolean aprobado = false;
             System.out.println(nombre + " no ha aprobado con un promedio de " + promedio);
         }
     }

@@ -5,19 +5,19 @@ public class Libro {
     private String autor;
     private int paginas;
 
-    public Libro(String titulo, String autor, int paginas) {
+    public Libro(String titulo, String autor, int paginas) { // Constructor completo
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
     }
 
-    public Libro() {
+    public Libro() { // Constructor vacío
         this.titulo = "Desconocido";
         this.autor = "Anónimo";
         this.paginas = 0;
     }
 
-     public Libro(String titulo, String autor) {
+     public Libro(String titulo, String autor) { // Constructor título y autor
          this.titulo = titulo;
          this.autor = autor;
          this.paginas = 0; // Valor predeterminado para páginas
@@ -48,6 +48,12 @@ public class Libro {
     }   
     public void setPaginas(int paginas) {
         this.paginas = paginas;
+    }
+
+    public void mostrarDetalles() {
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Páginas: " + paginas);
     }
 
 
